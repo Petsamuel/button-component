@@ -1,38 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,700&family=Ubuntu+Mono&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+
+}
+
+a {
+  color: #9E9E9E;
+}
+
 .App {
+  /* width:100%; */
+  display: flex;
+
+}
+
+.section-1 {
+  position: absolute;
+  width: 237px;
+  height: 155%;
+  /* height:100vh; */
+  left: -8.5px;
+  top: -9.07px;
+  background: #FAFBFD;
+}
+
+.nav-brand {
+  position: absolute;
+  width: 114px;
+  height: 20px;
+  left: 48px;
+  top: 38px;
+}
+
+.brandName {
+  color: rgba(9, 15, 49, 1);
+}
+
+.Red {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  color: #F7542E;
+}
+
+.nav-container {
+  position: absolute;
+  height: 20px;
+  left: 48px;
+  top: 180px;
+  font-family: 'Noto Sans JP';
+  font-weight: 500;
+  font-size: 14px;
+  color: #9E9E9E;
+}
+
+ul li {
+  line-height: 20px;
+  padding-top: 25px;
+}
+
+li:hover,
+li:focus,
+li>a.active {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #090F31;
+}
+
+/* section-2 */
+
+.title {
+  /* position: absolute; */
+  width: 93px;
+  height: 36px;
+  /* left: 320px;
+  top: 53px; */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #4F4F4F;
+  
+}
+
+.container {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  /* margin:5em auto; */
+}
+.section-2{
+  position:absolute;
+  left: 320px;
+  top: 53px; 
+  width: 70%;
+}
+
+.col-2>div {
+  padding: 1em 0em;
+}
+
+
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column;
+    gap:0.3em;
+}
+input{
+  font-family: 'Noto Sans JP';
+  width: 88px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #333333;
+  padding-bottom: 4px;
+  width:max-content;
+}
+.container-flex{
+  display:flex;
+  justify-content: space-between;
+  width:350px;
+  gap: 3em;
+  align-items: end;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.button-1 {
+  left: 319px;
+  top: 141px;
+  background: #E0E0E0;
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+  border-radius: 6px;
+  outline: none;
+
+}
+
+.button-2 {
+  left: 555px;
+  top: 141px;
+  background: #AEAEAE;
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+  border-radius: 6px;
+}
+
+.button-3 {
+  border: 1px solid #3D5AFE;
+  border-radius: 6px;
+  color: #3D5AFE;
+  background: white;
+}
+
+.button-4 {
+  background: rgba(41, 98, 255, 0.1);
+  border: 1px solid #3D5AFE;
+  border-radius: 6px;
+  color: #3D5AFE;
+}
+
+.button-5 {
+  color: #3D5AFE;
+  background: white;
+}
+
+.button-6 {
+  background: rgba(41, 98, 255, 0.1);
+  border-radius: 6px;
+  color: #3D5AFE;
+
+}
+.button-7{  
+  background: #3D5AFE;
+  border-radius: 6px;
+  color:white;
+}
+
+.col-4{
+display:grid;
+grid-template-columns: auto auto auto auto;
+width:40%
+}
+
+.button-8{
+  background: #E0E0E0;
+  border-radius: 6px;
+}
+.button-9{
+  color: #9E9E9E;
+  background: white;
+  grid-column: 2/4;
+}
+.button-10{
+  background: #2962FF;
+  box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
+  border-radius: 6px;
+  color:white;
+}
+
+.button-12{
+  width: 73px;
+  height: 32px;
+  background: #2962FF;
+  box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
+  border-radius: 6px;
+color:white;
+
+
+
+}
+.button-13{
+  width: 81px;
+  height: 36px;  
+  background: #2962FF;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+color:white;
+
+}
+.button-14{
+  width: 93px;
+height: 42px;
+background: #2962FF;
+box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
+border-radius: 6px;
+color:white;
+
+
+}
+.button-15{
+  background: #E0E0E0;
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+  border-radius: 6px;
+  
+}
+.button-16{
+  background: #2962FF;
+box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
+border-radius: 6px;
+color:white;
+
+}
+.button-17{
+  background: #455A64;
+  box-shadow: 0px 2px 3px rgba(69, 90, 100, 0.2);
+  border-radius: 6px;
+  color:white;
+}
+.button-18{
+  background: #D32F2F;
+  box-shadow: 0px 2px 3px rgba(211, 47, 47, 0.2);
+  border-radius: 6px;
+  color:white;
+}
+.button-19{
+  background: #AEAEAE;
+box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+border-radius: 6px;
+
+}
+.button-20{
+  background: #0039CB;
+box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
+border-radius: 6px;
+color:white;
+
+}
+.button-21{
+  color:white;
+  width: 104px;
+  background: #1C313A;
+  box-shadow: 0px 2px 3px rgba(69, 90, 100, 0.2);
+  border-radius: 6px;
+}
+.button-22{
+  background: #9A0007;
+  box-shadow: 0px 2px 3px rgba(211, 47, 47, 0.2);
+  border-radius: 6px;
+  color:white;
+}
+
+@media screen and (max-width:48em) and (max-width:64em){
+  .container-flex{
+
   }
-}
+  .col-3{
+    display:grid;
+    grid-template-columns: auto auto;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
-  }
+  .section-2{
+  position:absolute;
+  left: 290px;
+  top: 53px; 
+}
+ 
+  
 }
